@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Hotstar Clone - Home</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="main-header">
+    <h1>Hotstar Clone</h1>
+    <nav class="navbar">
+      <a href="index.html">Home</a>
+      <a href="sports.html">Sports</a>
+      <a href="movies.html">Movies</a>
+      <a href="shows.html">Reality Shows</a>
+      <a href="tv.html">TV</a>
+      <a href="news.html">News</a>
+      <a href="sparks.html">Sparks</a>
+      <a href="contact.html">Contact Us</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Welcome to Hotstar Clone</h2>
+    <p>Enjoy nonstop entertainment — anytime, anywhere!</p>
+  </section>
+
+  <!-- 🔐 Login Box Section -->
+  <section class="home-login-box">
+    <h2>Quick Login</h2>
+    <form onsubmit="return validateLoginForm()">
+      <input type="email" id="login-email" placeholder="Email" required />
+      <input type="password" id="login-password" placeholder="Password" required />
+      <button type="submit">Login</button>
+      <p>Don't have an account? <a href="signup.html">Sign up here</a></p>
+    </form>
+  </section>
+
+  <script src="js/validation.js"></script>
+
+</body>
+</html>

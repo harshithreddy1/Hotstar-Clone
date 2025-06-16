@@ -1,0 +1,277 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8f9fd;
+  color: #333;
+}
+
+/* Header */
+.main-header {
+  background-color: #4f8bff;
+  padding: 1rem;
+  text-align: center;
+  color: white;
+}
+
+.main-header h1 {
+  margin-bottom: 0.5rem;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  background-color: #ff4f81;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.navbar a:hover {
+  background-color: #e03d6f;
+}
+
+/* Hero Section (index.html) */
+.hero {
+  padding: 2rem;
+  text-align: center;
+  background: linear-gradient(135deg, #ff4f81, #4f8bff);
+  color: white;
+}
+
+.hero h2 {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
+/* Section Titles */
+main h2 {
+  text-align: center;
+  color: #4f8bff;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+/* Grid Card Layout (common for sports, movies, shows, etc.) */
+.card-grid, .news-grid, .sparks-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.card, .news-card, .spark-card {
+  background-color: white;
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.card:hover, .news-card:hover, .spark-card:hover {
+  transform: scale(1.05);
+}
+
+.card img, .news-card img, .spark-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.card h3, .news-card h3, .spark-card h3 {
+  margin-top: 1rem;
+  color: #ff4f81;
+}
+
+.card p, .news-card p, .spark-card p {
+  color: #555;
+}
+
+/* Forms (Signup, Login, Contact) */
+form {
+  max-width: 400px;
+  margin: 2rem auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 0 12px rgba(0,0,0,0.1);
+}
+
+form input,
+form textarea {
+  padding: 0.8rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+}
+
+form button {
+  background-color: #4f8bff;
+  color: white;
+  border: none;
+  padding: 0.9rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: #3976e8;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+/* Container to align cards horizontally */
+.sports-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 2rem;
+  flex-wrap: wrap; /* allows it to wrap on smaller screens */
+}
+
+/* Individual card styling */
+.sports-card {
+  background-color: white;
+  width: 250px;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.sports-card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.sports-card h3 {
+  margin-top: 10px;
+  color: #ff4f81;
+}
+
+.sports-card p {
+  font-size: 0.95rem;
+  color: #333;
+}
+.movies-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 2rem;
+  flex-wrap: wrap;
+}
+
+.movie-card {
+  background-color: white;
+  width: 250px;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.movie-card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.movie-card h3 {
+  margin-top: 10px;
+  color: #4f8bff; /* Blue heading */
+}
+
+.movie-card p {
+  font-size: 0.95rem;
+  color: #333;
+}
+.shows-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 2rem;
+  flex-wrap: wrap;
+}
+
+.show-card {
+  background-color: white;
+  width: 250px;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.show-card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.show-card h3 {
+  margin-top: 10px;
+  color: #ff4f81; /* Pink heading */
+}
+
+.show-card p {
+  font-size: 0.95rem;
+  color: #333;
+}
+.tv-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 2rem;
+  flex-wrap: wrap;
+}
+
+.tv-card {
+  background-color: white;
+  width: 250px;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.tv-card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.tv-card h3 {
+  margin-top: 10px;
+  color: #4f8bff; /* Blue heading */
+}
+
+.tv-card p {
+  font-size: 0.95rem;
+  color: #333;
+}
