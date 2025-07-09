@@ -5,6 +5,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Hotstar Clone - Home</title>
   <link rel="stylesheet" href="css/style.css">
+  <style>
+    body {
+      background: url('images/hotstar logo 1.jfif') no-repeat center center fixed;
+      background-size: cover;
+      position: relative;
+    }
+
+    /* Bright overlay to make background image brighter */
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(255, 255, 255, 0); /* adjust brightness here */
+      z-index: -1;
+    }
+  </style>
 </head>
 <body>
 
@@ -28,15 +47,17 @@
   </section>
 
   <!-- 🔐 Login Box Section -->
-  <section class="home-login-box">
-    <h2>Quick Login</h2>
-    <form onsubmit="return validateLoginForm()">
-      <input type="email" id="login-email" placeholder="Email" required />
-      <input type="password" id="login-password" placeholder="Password" required />
-      <button type="submit">Login</button>
-      <p>Don't have an account? <a href="signup.html">Sign up here</a></p>
-    </form>
-  </section>
+  <div class="login-bg-wrapper">
+    <section class="home-login-box">
+      <h2>Quick Login</h2>
+      <form onsubmit="return validateLoginForm()">
+        <input type="email" id="login-email" placeholder="Email" required />
+        <input type="password" id="login-password" placeholder="Password" required />
+        <button type="submit">Login</button>
+        <p>Don't have an account? <a href="signup.html">Sign up here</a></p>
+      </form>
+    </section>
+  </div>
 
   <script src="js/validation.js"></script>
 

@@ -4,7 +4,25 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>TV - Hotstar Clone</title>
-  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    body {
+      background: url('images/hotstar logo 1.jfif') no-repeat center center fixed;
+      background-size: cover;
+      position: relative;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(255, 255, 255, 0.4); /* Adjust brightness here */
+      z-index: -1;
+    }
+  </style>
 </head>
 <body>
 
@@ -27,21 +45,21 @@
 
     <div class="tv-container">
       <div class="tv-card">
-        <img src="assets/anupamaa.jfif" alt="Anupamaa">
-        <h3>Anupamaa</h3>
-        <p>Follow the inspiring journey of a devoted mother overcoming all odds.</p>
-      </div>
-
-      <div class="tv-card">
-        <img src="assets/ghum hai kisikey pyaar.jfif" alt="Taarak Mehta Ka Ooltah Chashmah">
-        <h3>TMKOC</h3>
-        <p>India’s favorite sitcom, packed with laughter and social messages.</p>
+        <img src="assets/anupamaa.jfif" alt="Anupama">
+        <h3>Anupama</h3>
+        <p>Emotional family drama with twists and turns.</p>
       </div>
 
       <div class="tv-card">
         <img src="assets/yeh rishta kya kehlata hai.jfif" alt="Yeh Rishta Kya Kehlata Hai">
-        <h3>YRKKH</h3>
-        <p>One of India's longest-running dramas. Don't miss the latest twists!</p>
+        <h3>Yeh Rishta Kya Kehlata Hai</h3>
+        <p>One of India's longest running family shows.</p>
+      </div>
+
+      <div class="tv-card">
+        <img src="assets/ghum hai kisikey pyaar.jfif" alt="Kundali Bhagya">
+        <h3>Kundali Bhagya</h3>
+        <p>A love story filled with drama and suspense.</p>
       </div>
     </div>
   </main>
