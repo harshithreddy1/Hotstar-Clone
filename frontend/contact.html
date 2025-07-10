@@ -26,10 +26,11 @@
     <h2>Contact Us</h2>
     <p>If you have any questions, feedback, or suggestions, feel free to reach out to us!</p>
 
-    <form class="contact-form" onsubmit="return validateContactForm()">
-      <input type="text" id="name" placeholder="Your Name" required />
-      <input type="email" id="email" placeholder="Your Email" required />
-      <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+    <!-- Updated form with action, method, and name attributes -->
+    <form class="contact-form" action="http://localhost:3000/contact" method="POST" onsubmit="return validateContactForm()">
+      <input type="text" name="name" id="name" placeholder="Your Name" required />
+      <input type="email" name="email" id="email" placeholder="Your Email" required />
+      <textarea name="message" id="message" rows="5" placeholder="Your Message" required></textarea>
       <button type="submit">Send Message</button>
     </form>
   </main>
@@ -45,8 +46,9 @@
         return false;
       }
 
+      // Optional: display confirmation before backend response
       alert("Message sent successfully!");
-      return true;
+      return true; // allow form submission to backend
     }
   </script>
 
